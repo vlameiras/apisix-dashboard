@@ -81,7 +81,7 @@ test('should CRUD consumer with all fields', async ({ page }) => {
 
     // Update labels - remove old ones and add new ones
     // First, remove existing labels by clicking the X button
-    const labelsSection = page.getByRole('group', { name: 'Basic Infomation' });
+    const labelsSection = page.getByRole('group', { name: 'Basic Information' });
     const removeButtons = labelsSection.locator('button[aria-label^="Remove"]');
     const count = await removeButtons.count();
     for (let i = 0; i < count; i++) {
